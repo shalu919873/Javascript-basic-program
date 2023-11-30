@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+#dd
+{
+width:80%;
+height:auto;
+min-height:200px;
+margin:0px auto;
+border:4px solid black;
+padding:4%;
+}
+#d1
+{
+width:50%;
+min-height:200px;
+float:left;
+height:auto;
+}
+#d2
+{
+width:50%;
+min-height:auto;
+float:left;
+height:auto;
+}
+</style>
+<script>
+var c=1,i;
+function f1()
+{
+c++;
+var dd="";
+for(i=1;i<=c;i++)
+{
+var a="<img src='ache.jpg' height='200px' width='100%'/><br/><br/>"
+dd=dd+a;
+}
+document.getElementById("d1").innerHTML=dd;
+}
+</script>
+</head>
+<body>
+<div id="dd">
+<div id="d1">
+<img src="ache.jpg" height="200px" width="100%">
+</div>
+<div id="d2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button onclick="f1()">Add</button>
+</div>
+</div>
+</body>
+</html>

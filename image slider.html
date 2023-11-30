@@ -1,0 +1,30 @@
+
+<html>
+<head>
+<script>
+var images=["ache.jpg","coder.jpeg","s1.jpeg","s10.jpeg","s7.jpeg"];
+var i=0;
+function slider()
+{
+document.getElementById("b1").style="background:url('"+images[i]+"');background-repeat:no-repeat;background-size:100% 100%;";
+
+i++;
+if(i==images.length)
+{
+i=0;
+}
+window.setTimeout("slider()",1200);
+}
+</script>
+</head>
+<body onload="slider()" id="b1">
+
+<div style="background:teal
+;height:100%;width:100%;opacity:0.6;
+font-size:90px;text-align:center;color:white;
+font-weight:bold;line-height:5;text-shadow:2px 2px 2px red;">
+This is background slider
+
+</div>
+</body>
+</html>

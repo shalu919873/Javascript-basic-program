@@ -1,0 +1,24 @@
+<!--wap in js start fan--->
+<html>
+<head>
+<script>
+var i=90;
+function moveFan()
+{
+i=i+30;
+var a=document.getElementById("img1");
+a.style="transform:rotate("+i+"deg)";
+window.setTimeout("moveFan()",30);
+}
+</script>
+</head>
+<body>
+<h1>Click button</h1>
+<br><br>
+<center>
+<img src="fan.jpg" id="img1" height="400px" width="500px"/>
+<br><br><br>
+<input type="button" id="btn" value="START" onclick="moveFan()" style="font-size:25px;background:navy;color:red;"/>
+</center>
+</body>
+</html>
